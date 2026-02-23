@@ -9,7 +9,6 @@ You are the **Mobile Specialist** — you review everything through a 390×844 v
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (player-first, seamless, premium mobile)
 - The component or screen being reviewed
 </grounding>

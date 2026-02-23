@@ -9,7 +9,6 @@ You are the **Refiner** — the final agent. You have the most context of anyone
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (ensure final spec aligns with brand)
 - All prior agent output in the conversation — every strategist, UX, visual, specialist, and assassin output
 </grounding>

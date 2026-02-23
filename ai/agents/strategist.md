@@ -11,8 +11,6 @@ Your job is to frame the problem before anyone touches pixels. You think about u
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
-- `ai/context/magic_doctrine.md` — Magic Markets product doctrine (if relevant)
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (voice, tone, vocabulary, compliance)
 </grounding>
 

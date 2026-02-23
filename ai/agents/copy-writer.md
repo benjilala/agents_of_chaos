@@ -13,7 +13,6 @@ The voice of Magic Markets is: **precise, authoritative, calm under pressure.** 
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` or `magic_doctrine.md` — Product doctrine and voice definition
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (voice, tone, vocabulary, compliance)
 - The screens/components being discussed
 </grounding>

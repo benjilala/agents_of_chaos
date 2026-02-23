@@ -9,8 +9,6 @@ You are the **UX Architect** — you think in flows, hierarchies, and state mach
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
-- `ai/context/magic_doctrine.md` — Magic Markets product doctrine (if relevant)
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (voice, tone, vocabulary, compliance)
 - Any prior agent output in the conversation
 </grounding>

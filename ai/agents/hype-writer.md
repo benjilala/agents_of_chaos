@@ -12,7 +12,6 @@ Magic Markets energy: **"You see what others don't. Prove it."**
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` or `magic_doctrine.md` — Product doctrine and brand voice
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (voice, tone, marketing rules, compliance)
 - The context of what's being promoted
 </grounding>

@@ -80,7 +80,7 @@ export function ActivateDialog({ open, onOpenChange }: ActivateDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-2xl glass-surface border-white/8 max-h-[85vh] flex flex-col overflow-hidden">
+      <DialogContent className="sm:max-w-2xl glass-surface border-white/8 max-h-[80vh] !grid-rows-[auto] !grid-cols-1 flex flex-col gap-3 overflow-hidden p-5">
         <DialogHeader className="shrink-0">
           <DialogTitle>Run Pipeline</DialogTitle>
           <DialogDescription>
@@ -91,7 +91,7 @@ export function ActivateDialog({ open, onOpenChange }: ActivateDialogProps) {
         </DialogHeader>
 
         {/* Pipeline order */}
-        <div className="flex items-center gap-2 overflow-x-auto py-2 scrollbar-thin shrink-0">
+        <div className="flex items-center gap-2 overflow-x-auto py-1 scrollbar-thin shrink-0">
           {activeAgents.map((agent, i) => (
             <div key={agent.id} className="flex items-center gap-2 shrink-0">
               <div className="flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2 py-1">
@@ -114,7 +114,7 @@ export function ActivateDialog({ open, onOpenChange }: ActivateDialogProps) {
         </div>
 
         {/* Problem statement input */}
-        <div className="space-y-2 shrink-0">
+        <div className="space-y-1.5 shrink-0">
           <label className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
             Problem Statement
           </label>
@@ -122,19 +122,24 @@ export function ActivateDialog({ open, onOpenChange }: ActivateDialogProps) {
             value={problem}
             onChange={(e) => setProblem(e.target.value)}
             placeholder="Describe the problem or feature you want the agents to work on..."
-            className="min-h-[60px] max-h-[100px] bg-white/5 border-white/10 text-sm resize-y"
+            className="min-h-[56px] max-h-[90px] bg-white/5 border-white/10 text-sm resize-y"
           />
         </div>
 
         {/* Preview — takes remaining space, scrolls internally */}
-        <ScrollArea className="min-h-0 flex-1 rounded-lg bg-white/5 border border-white/8">
-          <pre className="p-4 text-xs font-mono text-foreground/80 whitespace-pre-wrap">
+        <ScrollArea className="min-h-0 flex-1 rounded-lg bg-white/5 border border-white/8 overflow-hidden">
+          <pre className="p-3 text-xs font-mono text-foreground/80 whitespace-pre-wrap break-words">
             {composePrompt()}
           </pre>
         </ScrollArea>
 
         {/* Copy action — always visible at bottom */}
-        <Button className="w-full gap-2 shrink-0" size="lg" onClick={handleCopy}>
+        <Button
+          className="w-full gap-2 shrink-0"
+          size="lg"
+          onClick={handleCopy}
+          disabled={!problem.trim()}
+        >
           {copied ? (
             <>
               <Check className="h-4 w-4" />

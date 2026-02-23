@@ -3,16 +3,14 @@ set -euo pipefail
 
 # Agents of Chaos runner: generates a run brief for Cursor/AI IDEs.
 # Usage:
-#   ./scripts/aoc-run.sh "storm" "Redesign the Live Command Centre for mobile"
-#   ./scripts/aoc-run.sh "magic" "Improve order book clarity for pro users"
-#   ./scripts/aoc-run.sh "storm" "$(cat brief.txt)"
+#   ./scripts/aoc-run.sh "Redesign the Live Command Centre for mobile"
+#   ./scripts/aoc-run.sh "$(cat brief.txt)"
 
-DOCTRINE="${1:-storm}"   # storm | magic | both
-PROBLEM="${2:-}"
+PROBLEM="${1:-}"
 
 if [[ -z "${PROBLEM}" ]]; then
   echo "Error: Missing problem statement."
-  echo "Usage: $0 <storm|magic|both> \"<problem statement>\""
+  echo "Usage: $0 \"<problem statement>\""
   exit 1
 fi
 
@@ -21,8 +19,7 @@ AI_DIR="${ROOT_DIR}/ai"
 RUNS_DIR="${AI_DIR}/runs"
 
 BEN_OS="${AI_DIR}/context/ben_os.md"
-STORM_DOC="${AI_DIR}/context/storm_doctrine.md"
-MAGIC_DOC="${AI_DIR}/context/magic_doctrine.md"
+BRAND="${AI_DIR}/context/cloudbet_brand.md"
 ORCH="${AI_DIR}/orchestrator.md"
 
 missing=0
@@ -40,35 +37,16 @@ mkdir -p "${RUNS_DIR}"
 
 ts="$(date +"%Y%m%d-%H%M%S")"
 slug="$(echo "${PROBLEM}" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-|-$//g' | cut -c1-70)"
-out="${RUNS_DIR}/${ts}-${DOCTRINE}-${slug}.md"
-
-doctrine_block=""
-case "${DOCTRINE}" in
-  storm)
-    [[ -f "${STORM_DOC}" ]] && doctrine_block="- ${STORM_DOC}\n"
-    ;;
-  magic)
-    [[ -f "${MAGIC_DOC}" ]] && doctrine_block="- ${MAGIC_DOC}\n"
-    ;;
-  both)
-    [[ -f "${STORM_DOC}" ]] && doctrine_block="- ${STORM_DOC}\n"
-    [[ -f "${MAGIC_DOC}" ]] && doctrine_block+="- ${MAGIC_DOC}\n"
-    ;;
-  *)
-    echo "Invalid doctrine: ${DOCTRINE}. Use storm|magic|both."
-    exit 1
-    ;;
-esac
+out="${RUNS_DIR}/${ts}-${slug}.md"
 
 cat > "${out}" <<EOF
 # Agents of Chaos Run
 
-**Doctrine:** ${DOCTRINE}
 **Created:** ${ts}
 
 ## Load context
 - ${BEN_OS}
-$(echo -e "${doctrine_block}")
+- ${BRAND}
 - ${ORCH}
 
 ## Problem statement
@@ -99,7 +77,6 @@ You are running the **Agents of Chaos** orchestrator.
 
 ## Acceptance bar
 - Must feel like **Apple × Pentagram**
-- Must amplify **Storm energy** (or Magic Markets trust signals)
 - Must avoid generic SaaS UI
 - Must produce something we could build this sprint
 EOF

@@ -11,7 +11,6 @@ A polite Assassin is a useless Assassin.
 <grounding>
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
-- `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - Web Interface Guidelines (100+ rules) — cross-reference every critique against this ruleset
 - `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (audit against brand compliance)
 - Any prior agent output or code in the conversation
