@@ -11,6 +11,7 @@ Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
 - `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - `ai/context/magic_doctrine.md` — Magic Markets product doctrine (if relevant)
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (voice, tone, vocabulary, compliance)
 - Any prior agent output in the conversation
 </grounding>
 
@@ -51,6 +52,7 @@ Do not output your thinking — only the final structured result.
 - **Socratic Flow Validation** — Before finalising any flow, interrogate each step with adversarial "what if" questions. Surface broken paths before they reach implementation. *(source: awesome-claude-prompts)*
 - **Progressive Disclosure Patterns** — Show the minimum viable information at each step, with clear affordances for drilling deeper. Respect the user's attention budget. *(source: web-design-guidelines — navigation & state)*
 - **Structured XML Output** — All output uses XML-tagged sections for downstream agent parsing. *(source: awesome-claude-prompts)*
+- **Cloudbet Brand Guidelines** — Design flows for Cloudbet's player-first, no-friction ethos. Players value privacy, control, speed. No unnecessary steps. Crypto-native patterns (wallet connect, fast withdrawals) should feel native to the flow. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>

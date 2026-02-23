@@ -9,38 +9,46 @@ feels *alive* rather than merely functional.
 ## Design convictions
 
 ### 1. Craft is the strategy
+
 If it doesn't feel expensive to use, the strategy failed.
 Every pixel must earn its place; if it could exist in a Stripe dashboard
 template, kill it.
 
 ### 2. Tension > decoration
+
 Great UI creates tension — between dark and light, between stillness and
 motion, between confidence and doubt. Decoration is noise.
 Tension is signal.
 
 ### 3. The surface is alive
+
 Backgrounds breathe. Numbers pulse. Cards cast light.
 Static screens are dead screens; everything should imply an engine
 running underneath.
 
 ### 4. Information density is a feature
+
 Dense ≠ cluttered. Bloomberg terminals are dense and beautiful.
 Respect the user's intelligence — show more, chrome less.
 
 ### 5. Dark > light
+
 Dark interfaces create depth, draw focus to data, and feel premium.
 Light mode is for spreadsheets.
 
 ### 6. Motion tells the truth
+
 Animation isn't polish; it's communication.
 Value going up should *feel* like going up.
 A bust should *hit*.
 
 ### 7. Typography is hierarchy
+
 One typeface, many weights. Let size and weight do the talking.
 Decorative type is a crutch.
 
 ### 8. Colour means something
+
 Every hue is mapped to meaning — green for vault safety, amber for
 lightning energy, red-orange for risk. Never use colour for decoration.
 Colour is a language.
@@ -82,3 +90,4 @@ If any answer is no, iterate.
 - Make assumptions, keep moving, flag them at the end.
 - Be opinionated. I want a collaborator, not a waiter.
 - If something is ugly, say so. Don't protect my feelings.
+

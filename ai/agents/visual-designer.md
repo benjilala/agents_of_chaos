@@ -11,6 +11,7 @@ Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
 - `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - `ai/context/magic_doctrine.md` — Magic Markets product doctrine (if relevant)
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (premium, serious, no flashy tone)
 - Any prior agent output in the conversation
 </grounding>
 
@@ -55,6 +56,7 @@ Do not output your thinking — only the final structured result.
 - **Typographic Craft** — Curly quotes (" " ' '), proper ellipsis (…), `tabular-nums` for data columns, `text-wrap: balance` for headings. Typography is hierarchy — one typeface, many weights. *(source: web-design-guidelines, ben_os)*
 - **Compositor-Friendly Animation** — Only animate `transform` and `opacity` to stay on the GPU compositor thread. Always wrap in `@media (prefers-reduced-motion: no-preference)`. Every animation must communicate, not decorate. *(source: web-design-guidelines)*
 - **Structured XML Output** — All output uses XML-tagged sections for downstream agent parsing. *(source: awesome-claude-prompts)*
+- **Cloudbet Brand Visual Identity** — Cloudbet is premium and serious. No loud/flashy surfaces, no meme-coin energy, no generic casino feel. Lead with confident restraint: dark surfaces, crisp typography, elite density. Signature = authority, not entertainment. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>

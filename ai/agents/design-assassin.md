@@ -13,6 +13,7 @@ Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
 - `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - Web Interface Guidelines (100+ rules) — cross-reference every critique against this ruleset
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (audit against brand compliance)
 - Any prior agent output or code in the conversation
 </grounding>
 
@@ -64,6 +65,7 @@ Do not output your scratchpad — only the final structured critique.
 - **Web Interface Guidelines Cross-Reference** — Every critique is cross-checked against 100+ rules from the Web Interface Guidelines covering accessibility, URL state, theming, animation, typography, colour, and interaction patterns. Violations are cited by rule name. *(source: vercel-agent-skills — web-design-guidelines)*
 - **Ben OS Doctrine Compliance** — Every critique validates against the design operating system: craft, tension, surface aliveness, density, dark-first, motion-as-truth, typography-as-hierarchy, semantic colour. *(source: ben_os.md)*
 - **Structured XML Output** — All output uses XML-tagged sections for downstream agent parsing. *(source: awesome-claude-prompts)*
+- **Cloudbet Brand Compliance Audit** — Cross-reference every design against Cloudbet's brand guidelines. Does it feel premium and serious, or generic casino? Does the tone match (confident, not flashy)? Is crypto-native identity visible? Are compliance guardrails (responsible gaming, no guaranteed winnings) properly integrated without ruining UX? Does it use "players" not "users"? Would Cloudbet's brand team approve? Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>

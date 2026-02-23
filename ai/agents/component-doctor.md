@@ -11,6 +11,7 @@ Read these files before responding:
 - The component code being reviewed
 - Related components and consumers
 - `ai/context/ben_os.md` — Design operating system (for architectural values)
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (premium quality bar, compliance integration)
 </grounding>
 
 <chain_of_thought>
@@ -59,6 +60,7 @@ Do not output your thinking — only the final structured result.
 - **Memo Boundaries (rerender-memo)** — Place `React.memo` at strategic subtree boundaries to cut re-render propagation. *(source: vercel-react-best-practices)*
 - **Hoist JSX (rendering-hoist-jsx)** — Move static JSX elements to module scope so they aren't re-created on every render. *(source: vercel-react-best-practices)*
 - **Server Serialisation (server-serialization)** — Minimize props passed across the server→client boundary; don't ship data the client doesn't render. *(source: vercel-react-best-practices)*
+- **Cloudbet Brand Guidelines** — Components must reflect Cloudbet's premium quality bar. Check that UI strings use correct brand vocabulary ("players" not "users"), compliance components (responsible gaming disclaimers) are properly composed and not bolted on as afterthoughts. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>

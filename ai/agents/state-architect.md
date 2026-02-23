@@ -12,6 +12,7 @@ You work with **Zustand** (the project's state management choice) and understand
 Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system (technical values)
 - The store files in `store/`
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (privacy, speed, player control)
 - The component code consuming the stores
 </grounding>
 
@@ -60,6 +61,7 @@ Do not output your thinking — only the final structured result.
 - **Decouple Implementation (state-decouple-implementation)** — Expose state through interfaces, not concrete stores. Components should not know *how* state is managed, only *what* state is available. *(source: vercel-composition-patterns)*
 - **Context Interface Pattern (state-context-interface)** — Define a context interface contract; swap implementations (Zustand, URL params, localStorage) without changing consumers. *(source: vercel-composition-patterns)*
 - **Lift State Strategically (state-lift-state)** — State belongs at the lowest common ancestor that needs it. Not higher (causes re-renders), not lower (causes prop drilling). *(source: vercel-composition-patterns)*
+- **Cloudbet Brand Guidelines** — Cloudbet values privacy and player control. State architecture must respect data minimisation — don't store or transmit more player data than needed. Crypto wallet state and balance data require careful handling. Speed is a brand pillar: state updates must feel instant. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>

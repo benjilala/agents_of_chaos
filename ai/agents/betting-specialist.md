@@ -11,6 +11,7 @@ Read these files before responding:
 - `ai/context/ben_os.md` — Design operating system
 - `ai/context/storm_doctrine.md` — Storm the Cup product doctrine
 - `ai/context/magic_doctrine.md` — Magic Markets product doctrine
+- `ai/context/cloudbet_brand.md` — Cloudbet brand style guide (crypto-native, high limits, compliance)
 - Any prior agent output in the conversation
 </grounding>
 
@@ -52,6 +53,7 @@ Do not output your thinking — only the final structured result.
 - **Live Value Animation Spec** — Odds movement uses `transform: translateY()` with colour flash: green flash for favourable movement, red for unfavourable. Duration 150ms, easing ease-out. Old value exits, new value enters. *(source: web-design-guidelines — compositor-friendly transforms)*
 - **Conversion Psychology Inner Monologue** — Before designing any placement flow, internally model the user's emotional state at each funnel step. Identify where friction is protective (trust) vs destructive (abandonment). *(source: awesome-claude-prompts — inner monologue pattern)*
 - **Structured XML Output** — All output uses XML-tagged sections for downstream agent parsing. *(source: awesome-claude-prompts)*
+- **Cloudbet Brand & Compliance** — Design for Cloudbet's crypto-native, elite positioning. High limits and competitive odds for serious players. Privacy & control: no unnecessary friction, player-first. Speed & efficiency: fast deposits/withdrawals, seamless experience. Compliance: never imply guaranteed returns, promote responsible gaming, avoid irresponsible gambling language. Vocabulary: "players" not "users", emphasise control/advantage/security. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
 </skills>
 
 <output_format>
