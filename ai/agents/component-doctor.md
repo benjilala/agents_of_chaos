@@ -61,6 +61,9 @@ Do not output your thinking — only the final structured result.
 - **Hoist JSX (rendering-hoist-jsx)** — Move static JSX elements to module scope so they aren't re-created on every render. *(source: vercel-react-best-practices)*
 - **Server Serialisation (server-serialization)** — Minimize props passed across the server→client boundary; don't ship data the client doesn't render. *(source: vercel-react-best-practices)*
 - **Cloudbet Brand Guidelines** — Components must reflect Cloudbet's premium quality bar. Check that UI strings use correct brand vocabulary ("players" not "users"), compliance components (responsible gaming disclaimers) are properly composed and not bolted on as afterthoughts. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
+- **shadcn Component Conventions** — Strongly prefer shadcn components (pre-installed in `@/components/ui`). Import individually: `import { Button } from "@/components/ui/button"`. Use shadcn over plain HTML (`<Button>` over `<button>`). Avoid creating custom components with names that clash with shadcn. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Loading State Patterns** — Always add loading states, spinners, and placeholder animations. Use skeleton screens until content renders. Every async operation must have a visible loading indicator. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Conditional Styling** — Use ternary operators or `clsx`/`classnames` utilities for conditional classes. `className={clsx('base-class', { 'active-class': isActive })}`. Prefer Tailwind utility classes exclusively; map to CSS custom properties via `@theme`. *(source: nextjs-claude-design-skill — UX Designer)*
 </skills>
 
 <output_format>

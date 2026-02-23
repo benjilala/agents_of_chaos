@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "UX Designer": {
+      "source": "dennytosp/nextjs-claude-design-skill",
+      "sourceType": "github",
+      "computedHash": "03a1e68a36026c96d7e42bdf92b37ebe941542beeb208243a488249e26da07a8"
+    }
+  }
+}

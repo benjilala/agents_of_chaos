@@ -56,6 +56,9 @@ Do not output your thinking — only the final structured result.
 - **Content Visibility** — Apply `content-visibility: auto` to off-screen animated sections to reduce rendering cost. *(source: vercel-react-best-practices)*
 - **Performance Budget Awareness** — Track total concurrent animation cost per view; flag views exceeding GPU budget. *(source: vercel-react-best-practices)*
 - **Cloudbet Brand Motion Language** — Cloudbet is premium and serious. Motion must communicate confidence, not excitement. Avoid flashy/loud animations, casino-style effects, or playful bounces. Prefer subtle authority: precise easing, restrained timing, smooth data transitions. Motion should feel like a Bloomberg terminal, not a slot machine. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
+- **Animation Timing Guidelines** — Precise timing brackets: quick actions (button press) 100-150ms, state changes 200-300ms, page transitions 300-500ms, attention-directing 200-400ms. Use CSS animations over JavaScript when possible. Use `framer-motion` sparingly and purposefully. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Natural Physics Principle** — Animations must follow real-world physics: appropriate acceleration/deceleration, mass and momentum characteristics, elasticity appropriate to context. Animations should be felt rather than seen — avoid mechanical or artificial feeling. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Purposeful Animation Doctrine** — Every animation must serve one of four functional purposes: orient users during navigation, establish relationships between elements, provide feedback for interactions, or guide attention to important changes. If it doesn't serve one of these, cut it. *(source: nextjs-claude-design-skill — UX Designer)*
 </skills>
 
 <output_format>

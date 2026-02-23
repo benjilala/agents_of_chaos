@@ -96,6 +96,9 @@ export const AGENTS: AgentDef[] = [
       "URL-as-State Architecture",
       "Structured XML Output",
       "Cloudbet Brand Guidelines",
+      "Design Decision Protocol",
+      "Core UX Patterns (Direct Manipulation, Feedback, Forgiveness)",
+      "Navigation Standards",
     ],
   },
   {
@@ -140,6 +143,10 @@ export const AGENTS: AgentDef[] = [
       "Compositor-Friendly Animation",
       "Structured XML Output",
       "Cloudbet Brand Visual Identity",
+      "Typography Excellence (Font Versions & Kerning)",
+      "Sophisticated Palette Strategy",
+      "Layout Composition & Attention Guidance",
+      "Stand Out From Generic Patterns",
     ],
   },
   {
@@ -271,6 +278,8 @@ export const AGENTS: AgentDef[] = [
       "Ben OS Doctrine Compliance",
       "Structured XML Output",
       "Cloudbet Brand Compliance Audit",
+      "\"Swap the Brand\" Uniqueness Test",
+      "Common Anti-Patterns Checklist",
     ],
   },
   {
@@ -315,6 +324,9 @@ export const AGENTS: AgentDef[] = [
       "Composition Patterns (compound components, explicit variants, children-over-render-props)",
       "Structured XML Output",
       "Cloudbet Brand Alignment",
+      "Design Implementation Standards",
+      "Responsive Spec Requirements",
+      "Accessibility Spec Requirements",
     ],
   },
 
@@ -364,6 +376,8 @@ export const AGENTS: AgentDef[] = [
       "Web Design Compliance",
       "Systematic Inner Monologue",
       "Cloudbet Brand Compliance in Code",
+      "Accessibility Implementation Audit",
+      "Styling Consistency Audit",
     ],
   },
   {
@@ -407,6 +421,9 @@ export const AGENTS: AgentDef[] = [
       "Content Visibility",
       "Structured XML Output",
       "Cloudbet Brand Motion Language",
+      "Animation Timing Guidelines (100-500ms)",
+      "Natural Physics Principle",
+      "Purposeful Animation Doctrine",
     ],
   },
   {
@@ -493,6 +510,10 @@ export const AGENTS: AgentDef[] = [
       "WCAG 2.2 AA Checklist",
       "Structured XML Output",
       "Cloudbet Brand Guidelines",
+      "ARIA Patterns Library",
+      "Focus Trap in Modals",
+      "Screen Reader Content (sr-only)",
+      "Colour Contrast Testing (AA ratios)",
     ],
   },
   {
@@ -538,6 +559,10 @@ export const AGENTS: AgentDef[] = [
       "Safe Area Compliance",
       "Structured XML Output",
       "Cloudbet Brand Guidelines",
+      "Mobile-First Responsive Patterns",
+      "Touch-Friendly Forms",
+      "Responsive Navigation",
+      "Responsive Content Strategy",
     ],
   },
   {
@@ -635,6 +660,9 @@ export const AGENTS: AgentDef[] = [
       "Hoist JSX",
       "Structured XML Output",
       "Cloudbet Brand Guidelines",
+      "shadcn Component Conventions",
+      "Loading State Patterns",
+      "Conditional Styling (clsx/Tailwind)",
     ],
   },
   {

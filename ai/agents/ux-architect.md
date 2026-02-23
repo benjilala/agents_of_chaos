@@ -53,6 +53,9 @@ Do not output your thinking — only the final structured result.
 - **Progressive Disclosure Patterns** — Show the minimum viable information at each step, with clear affordances for drilling deeper. Respect the user's attention budget. *(source: web-design-guidelines — navigation & state)*
 - **Structured XML Output** — All output uses XML-tagged sections for downstream agent parsing. *(source: awesome-claude-prompts)*
 - **Cloudbet Brand Guidelines** — Design flows for Cloudbet's player-first, no-friction ethos. Players value privacy, control, speed. No unnecessary steps. Crypto-native patterns (wallet connect, fast withdrawals) should feel native to the flow. Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
+- **Design Decision Protocol** — ALWAYS ASK before making design decisions (colours, fonts, sizes, layouts). Never implement changes until explicitly instructed. Present alternatives and trade-offs, not single "correct" solutions. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Core UX Patterns** — Direct manipulation (interact with content, not abstract controls), immediate feedback (within 100ms), consistent behaviour (similar elements behave similarly), forgiveness (errors difficult, recovery easy). Conversational-first interfaces prioritising natural language. *(source: nextjs-claude-design-skill — UX Designer)*
+- **Navigation Standards** — Clear structure with intuitive menus. Breadcrumbs for location awareness. Standard components to reduce learning curve. Predictable behaviour for all interactive elements. *(source: nextjs-claude-design-skill — UX Designer)*
 </skills>
 
 <output_format>

@@ -58,6 +58,8 @@ Do not output your thinking — only the final structured result.
 - **Web Design Compliance** — Cross-check semantic HTML, ARIA correctness, focus states, and touch targets against web-design-guidelines. *(source: web-design-guidelines)*
 - **Systematic Inner Monologue** — Read first, categorise, then critique. Never skim. *(source: awesome-claude-prompts)*
 - **Cloudbet Brand Compliance in Code** — Audit code for brand vocabulary alignment: "players" not "users" in UI strings, correct terminology ("crypto" not "cryptocurrency"), no banned language ("cheap", "easy money", "risk-free"). Verify compliance guardrails are implemented (responsible gaming disclaimers, no guaranteed-winnings copy). Reference: `ai/context/cloudbet_brand.md`. *(source: Cloudbet AI Brand Style Guide)*
+- **Accessibility Implementation Audit** — Verify: all interactive elements have accessible names (`aria-label` or visible text), heading hierarchy is sequential (no skipped levels), ARIA states are correct (`aria-expanded`, `aria-selected`, `aria-live`), colour contrast passes WCAG AA (4.5:1 normal, 3:1 large), forms have visible labels (not just placeholders), error messages use `role="alert"`, focus indicators are visible, `sr-only` content is present where needed. *(source: nextjs-claude-design-skill — UX Designer / ACCESSIBILITY.md)*
+- **Styling Consistency Audit** — Check: Tailwind utility classes used exclusively (no raw CSS unless necessary), CSS custom properties for theming, grid/flex wrappers with `gap` (not margins on children), shadcn components used over raw HTML, icon library consistency, `sonner` for toasts. Flag any inline styles or CSS modules that should be Tailwind. *(source: nextjs-claude-design-skill — UX Designer)*
 </skills>
 
 <output_format>

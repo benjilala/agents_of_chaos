@@ -8,6 +8,7 @@ or use the runner: `./scripts/aoc-agent.sh <agent-name> "<problem>"`
 All agents have been upskilled with techniques from:
 - **[awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)** — XML tags, inner monologue, chain-of-thought, structured output, AIDA/CRISPE frameworks
 - **[vercel-agent-skills](https://github.com/vercel-labs/agent-skills)** — React best practices (57 rules), web design guidelines (100+ rules), composition patterns
+- **[nextjs-claude-design-skill](https://github.com/dennytosp/nextjs-claude-design-skill)** — UX Designer skill: typography excellence (font versions, kerning, emotional selection), sophisticated palette strategy, layout composition, responsive design patterns, accessibility patterns (ARIA library, focus traps, sr-only), animation timing, shadcn conventions, loading states
 - **Claude-specific optimisations** — XML-tagged sections (~30% better Claude response quality), `<chain_of_thought>` pre-reasoning, `<grounding>` context loading
 - **Cloudbet Brand Guidelines** — All agents are grounded in `ai/context/cloudbet_brand.md`. Voice (direct, assertive, no fluff), visual identity (premium, dark, confident), vocabulary ("players" not "users"), compliance (no guaranteed winnings, responsible gaming), and tone-by-context rules. Copy-facing agents (Copy Writer, Hype Writer) have deep brand voice integration; the Design Assassin audits brand compliance.
 
