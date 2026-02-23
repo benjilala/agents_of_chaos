@@ -119,6 +119,64 @@ bind semantics to specific UI (`card-bg`, `badge-text`, `odds-flash`).
 
 ---
 
+## Visual composition
+
+Classical principles, Ben OS edition. These aren't suggestions —
+they're the physics of layout.
+
+### Alignment
+
+- Grid or die. Every element snaps to a baseline grid or explicit column.
+  Eyeballed positioning is a bug.
+- Use Tailwind's grid/flex with explicit gap tokens. No margin hacks.
+
+### Balance
+
+- Asymmetric by default. Symmetric layouts feel corporate. Weighted
+  asymmetry (heavy left, light right) creates tension and interest.
+- Data-dense panels balance against breathing space — never 50/50.
+
+### Proportion
+
+- Scale communicates importance. Primary values (odds, balance) are
+  physically larger. Supporting data (timestamps, labels) is physically
+  smaller. There is no "medium" — commit to large or small.
+- Use a constrained type scale. If two elements are the same size,
+  they'd better have the same importance.
+
+### Repetition
+
+- Repeat patterns, not pixels. If a card treatment works for match
+  data, it works for player profiles. Consistency builds trust faster
+  than novelty.
+- Token-driven repetition: same radius, same shadow, same padding.
+  Variation should be semantic, not random.
+
+### Rhythm
+
+- Spacing has a beat. Use a 4px base unit. Micro gaps (4-8px) inside
+  components, macro gaps (16-32px) between sections. Irregular spacing
+  is visual noise.
+- Vertical rhythm: every block should snap to a line-height multiple.
+  Content that drifts off the baseline grid feels broken.
+
+### Proximity
+
+- Related items touch. Unrelated items don't. The distance between
+  elements is information — it tells the user what belongs together.
+- A label 24px from its value is divorced from it. 4-8px says "this
+  is mine."
+
+### Unity
+
+- Every screen should feel like it belongs to the same product. If
+  you dropped a new page into the app, it should be indistinguishable
+  from existing pages in tone, density, and surface treatment.
+- Unity is the result of applying every other principle consistently.
+  If something looks "off," one of these principles is being violated.
+
+---
+
 ## Accessibility
 
 Accessibility is a design constraint that makes products better for
